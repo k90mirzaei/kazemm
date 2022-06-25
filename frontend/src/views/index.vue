@@ -4,7 +4,6 @@
     <Hero/>
     <Skills/>
     <Blogs/>
-<!--    <Contact/>-->
     <Footer/>
   </default>
 </template>

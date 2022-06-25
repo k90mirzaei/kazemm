@@ -1,5 +1,5 @@
 <template>
-  <div id="contact" class="flex flex-col items-center p-10 mb-12 bg-blue-500 rounded-xl overflow-hidden shadow-2xl">
+  <div id="contact" class="flex flex-col items-center p-8 mb-12 mx-4 bg-blue-500 rounded-xl overflow-hidden shadow-2xl">
     <h2 class="text-white text-2xl font-bold pb-5">Contact Me in Social</h2>
     <p class="text-gray-50 text-lg">Let me know if you are interested in my services and collaboration!</p>
     <div class="flex items-center justify-center gap-10 py-10" >

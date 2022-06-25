@@ -56,8 +56,8 @@ services:
   frontend:
     image: node:16-alpine
     container_name: frontend
-    env_file: .env
     working_dir: /app
+    env_file: .env
     tty: true
     expose:
       - "8080"
