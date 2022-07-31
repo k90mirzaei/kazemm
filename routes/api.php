@@ -25,6 +25,3 @@ Route::group(["middleware" => "auth:api"], function () {
     Route::post("logout", [LoginController::class, 'logout'])
         ->name("logout")->middleware('auth:api');;
 });
-
-
-
