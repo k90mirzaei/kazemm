@@ -15,11 +15,8 @@ services:
     ports:
       - "80:80"
     volumes:
-      - ./backend:/var/www
+      - ./:/var/www
       - .docker/nginx:/etc/nginx/conf.d
-    depends_on:
-      - frontend
-      - php
     networks:
       app-network:
 
@@ -30,7 +27,7 @@ services:
     container_name: php
     env_file: .env
     volumes:
-      - ./backend:/var/www
+      - ./:/var/www
       - .docker/php/php.ini:/usr/local/etc/php/conf.d/local.ini
     networks:
       app-network:
@@ -52,17 +49,3 @@ services:
     command: '--default-authentication-plugin=mysql_native_password'
     networks:
       - app-network
-
-  frontend:
-    image: node:16-alpine
-    container_name: frontend
-    working_dir: /app
-    env_file: .env
-    tty: true
-    expose:
-      - "8080"
-    volumes:
-      - ./frontend:/app
-    networks:
-      app-network:
-    command: npm run serve
