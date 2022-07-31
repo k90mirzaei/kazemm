@@ -4,6 +4,8 @@ const RSS_KEY = process.env.VUE_APP_RSS_API_KEY;
 const RSS_URL = process.env.VUE_APP_RSS_URL;
 const RSS_API = process.env.VUE_APP_RSS_API
 
+console.log(process.env)
+
 const fetchRss = (count = null) => {
     return api.get(RSS_API, {
         params: {
