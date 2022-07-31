@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://mydev.test/api/";
+const API_URL = process.env.APP_URL + "/api";
 
 const api = axios.create({
     baseURL: API_URL,
