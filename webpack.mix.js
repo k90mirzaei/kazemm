@@ -17,13 +17,3 @@ mix.js('resources/js/app.js', 'public/js')
         require("tailwindcss")
     ]);
 
-mix.webpackConfig((webpack) => {
-    return {
-        plugins: [
-            new webpack.DefinePlugin({
-                "process.env": JSON.stringify(process.env),
-            }),
-        ],
-    };
-});
-
