@@ -1,7 +1,7 @@
-const email = process.env.VUE_APP_EMAIL
-const github = process.env.VUE_APP_GITHUB
-const linkedin = process.env.VUE_APP_LINKEDIN
-const twitter = process.env.VUE_APP_TWITTER
+const email = process.env.MIX_EMAIL
+const github = process.env.MIX_GITHUB
+const linkedin = process.env.MIX_LINKEDIN
+const twitter = process.env.MIX_TWITTER
 
 export default  {
     email,
