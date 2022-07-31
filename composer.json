@@ -40,7 +40,9 @@
             "@php artisan package:discover --ansi"
         ],
         "post-update-cmd": [
-            "@php artisan vendor:publish --tag=laravel-assets --ansi --force",
+            "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
+        ],
+        "post-install-cmd": [
             "php artisan clear-compiled",
             "chmod -R 777 storage",
             "php artisan passport:keys"
