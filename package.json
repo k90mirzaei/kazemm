@@ -10,15 +10,18 @@
         "production": "mix --production"
     },
     "dependencies": {
-        "vue": "^3.2.37",
-        "vue-loader": "^17.0.0",
-        "v-resizable-input": "^0.1.2",
-        "vue-router": "^4.0.16",
         "autoprefixer": "^10.4.8",
         "axios": "^0.25",
         "laravel-mix": "^6.0.6",
         "lodash": "^4.17.19",
         "postcss": "^8.4.14",
-        "tailwindcss": "^3.1.7"
+        "tailwindcss": "^3.1.7",
+        "v-resizable-input": "^0.1.2",
+        "vue": "^2.6.12",
+        "vue-loader": "^15.10.0",
+        "vue-router": "^3.5.4"
+    },
+    "devDependencies": {
+        "vue-template-compiler": "^2.7.8"
     }
 }
