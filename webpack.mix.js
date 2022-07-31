@@ -21,7 +21,10 @@ mix.webpackConfig((webpack) => {
     return {
         plugins: [
             new webpack.DefinePlugin({
-                "process.env": JSON.stringify(process.env),
+                "process.env.MIX_EMAIL": JSON.stringify(process.env.MIX_EMAIL),
+                "process.env.MIX_GITHUB": JSON.stringify(process.env.MIX_GITHUB),
+                "process.env.MIX_TWITTER": JSON.stringify(process.env.MIX_TWITTER),
+                "process.env.MIX_LINKEDIN": JSON.stringify(process.env.MIX_LINKEDIN),
             }),
         ],
     };
