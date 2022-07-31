@@ -21,6 +21,10 @@ mix.webpackConfig((webpack) => {
     return {
         plugins: [
             new webpack.DefinePlugin({
+                "process.env.MIX_RSS_API_KEY": JSON.stringify(process.env.MIX_RSS_API_KEY),
+                "process.env.MIX_RSS_URL": JSON.stringify(process.env.MIX_RSS_URL),
+                "process.env.MIX_RSS_API": JSON.stringify(process.env.MIX_RSS_API),
+                "process.env.MIX_APP_URL": JSON.stringify(process.env.MIX_APP_URL),
                 "process.env.MIX_EMAIL": JSON.stringify(process.env.MIX_EMAIL),
                 "process.env.MIX_GITHUB": JSON.stringify(process.env.MIX_GITHUB),
                 "process.env.MIX_TWITTER": JSON.stringify(process.env.MIX_TWITTER),
